@@ -1,0 +1,386 @@
+body{
+    width: 100%;
+}
+#new{
+    background-color: white;
+    color: orangered;
+    font-size: 20px;
+    font-weight: 600;
+    border: 2px groove orangered;
+    margin-top: 3%;
+    margin-left: 3%;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+}
+#new:hover{
+    background-color: orangered;
+    color: white;
+    
+}
+.billContainer{
+    width: 80%;
+    margin-left: 10%;
+    height: 960px;
+    margin-top: 2%;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.76); 
+}
+.inputs{
+    width: 60%;
+    margin-left: 20%;
+    height: 490px;
+    margin-top: 2%;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.76);
+}
+.labelContainer{
+   
+    width: 40%;
+    float: left;
+    margin-top: 1%;
+    height: 80px;
+    margin-left: 6%;
+}
+.labelContainer>label{
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+}
+.labelContainer>input{
+    width: 90%;
+    margin-top: 2%;
+    height: 35px;
+    border: 2px groove #33287c;
+    font-size: 16px;
+}
+.proceed{
+    background-color: white;
+    color: #33287c;
+    font-size: 20px;
+    font-weight: 600;
+    border: 2px groove #33287c;
+    margin-top: 2%;
+    margin-left: 37%;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+}
+.proceed:hover{
+    background-color: #33287c;
+    color: white;
+}
+.subcontainer{
+    width: 98%;
+    margin: 1%;
+    border: 2px solid #33287c;
+    height: 950px;
+}
+#company{
+    text-align: center;
+    color: #33287c;
+}
+.location{
+    margin-left: 25%;
+    color: #33287c;
+}
+.details{
+    width: 98%;
+    margin: 1%;
+    border: 2px solid #33287c;
+    height: 350px; 
+}
+#invoiceHolder{
+    margin-top: 2%;
+    float: right;
+    margin-right: 2%;
+    width: 250px;
+    height: 40px;
+}
+#invoiceLabel{
+    font-size: 20px;
+    font-weight: 500;
+    color: #33287c;
+}
+#invoice{
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(243, 7, 7);
+    margin-left: 2%;
+}
+.entries{
+    width: 97%;
+    border: 2px groove #33287c;
+    height: 30px;
+    margin-left: 1%;
+    margin-top: 0.5%;
+}
+.namelabel{
+    font-size: 20px;
+    color: #33287c;
+    font-weight: 500;
+}
+.enteredValues{
+    font-size: 21px;
+    color: #33287c;
+    font-weight: 500;
+}
+.bill{
+    width: 95%;
+    margin: 2.5%;
+    border: 2px solid #33287c;
+    height: 220px;
+}
+.productdiv{
+    width: 75%;
+    height: 220px;
+    border: none;
+    border-right: 2px groove #33287c;
+    float: left;
+}
+
+#producttitle{
+    width: 100%;
+    height: 35px;
+    border: none;
+    border-bottom: 2px groove #33287c;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #33287c;
+}
+#qtytitle{
+    width: 100%;
+    height: 35px;
+    border: none;
+    border-bottom: 2px groove #33287c;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #33287c;
+}
+#amounttitle{
+    width: 100%;
+    height: 35px;
+    border: none;
+    border-bottom: 2px groove #33287c;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #33287c;
+}
+.totaldiv{
+    width: 95%;
+    margin-left: 2.5%;
+    margin-top: -2.5%;
+    border: 2px solid #33287c;
+    height: 45px; 
+}
+.footer{
+    font-size: 22px;
+    font-weight: 600;
+    color: #33287c;
+    float: left;
+    margin-left: 3%;
+}
+.totalPrice{
+    font-size: 26px;
+    font-weight: 600;
+    color: #e60707;
+    float: right;
+    margin-right: 8%; 
+}
+.print{
+    background-color: orangered;
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    border: 2px groove orangered;
+    margin-top: 2%;
+    margin-left: 45%;
+    width: 220px;
+    height: 45px;
+    text-align: center; 
+}
+
+#footernote1{
+    margin-top: 10%; 
+    color:#33287c;
+}
+#footernote2{
+    color:#33287c;
+}
+@media only screen and (max-width: 750px) {
+    body {
+      background-color: rgb(105, 233, 88);
+    }
+    .labelContainer>label{
+        font-size: 12px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 400;
+  }
+  .proceed{
+      margin-left: 22%;
+  }
+  .location{
+      margin-left: 15%;
+  }
+  #invoiceLabel{
+    font-size: 15px;
+}
+#invoice{
+    font-size: 20px;
+}
+.namelabel{
+    font-size: 12px;
+    color: #33287c;
+    font-weight: 500;
+}
+.details{
+    width: 97%;
+    height: 250px; 
+}
+.enteredValues{
+    font-size: 14px;
+}
+#producttitle{
+    font-size: 14px;
+
+}
+.productdiv{
+    width: 65%;
+}
+#amounttitle{
+    font-size: 14px;
+}
+#footernote1{
+    margin-top: 12%; 
+    color:#33287c;
+}
+.subcontainer{
+    height: 750px;
+}
+.billContainer{
+    height: 770px;
+}
+.entries{
+    width: 97%;
+}
+}
+@media only screen and (max-width: 700px) {
+    body {
+      background-color: hsl(41, 77%, 63%);
+    }
+    .labelContainer>label{
+        font-size: 12px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 400;
+  }
+  .proceed{
+      margin-left: 22%;
+  }
+  .location{
+      margin-left: 15%;
+  }
+  #invoiceLabel{
+    font-size: 15px;
+}
+#invoice{
+    font-size: 20px;
+}
+.namelabel{
+    font-size: 12px;
+    color: #33287c;
+    font-weight: 500;
+}
+.details{
+    width: 97%;
+    height: 250px; 
+}
+.enteredValues{
+    font-size: 14px;
+}
+#producttitle{
+    font-size: 14px;
+
+}
+.productdiv{
+    width: 65%;
+}
+#amounttitle{
+    font-size: 14px;
+}
+#footernote1{
+    margin-top: 12%; 
+    color:#33287c;
+}
+.subcontainer{
+    height: 750px;
+}
+.billContainer{
+    height: 770px;
+}
+.entries{
+    width: 97%;
+}
+}
+
+
+  @media only screen and (max-width: 655px) {
+    body {
+      background-color: #569be9;
+    }
+    .labelContainer>label{
+        font-size: 12px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 400;
+  }
+  .proceed{
+      margin-left: 22%;
+  }
+  .location{
+      margin-left: 15%;
+  }
+  #invoiceLabel{
+    font-size: 15px;
+}
+#invoice{
+    font-size: 20px;
+}
+.namelabel{
+    font-size: 12px;
+    color: #33287c;
+    font-weight: 500;
+}
+.details{
+    width: 97%;
+    height: 250px; 
+}
+.enteredValues{
+    font-size: 14px;
+}
+#producttitle{
+    font-size: 14px;
+
+}
+.productdiv{
+    width: 65%;
+}
+#amounttitle{
+    font-size: 14px;
+}
+#footernote1{
+    margin-top: 12%; 
+    color:#33287c;
+}
+.subcontainer{
+    height: 750px;
+}
+.billContainer{
+    height: 770px;
+}
+.entries{
+    width: 97%;
+}
+}

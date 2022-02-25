@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Laxmi Mobiles</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js"></script>
+</head>
+
+<body onload="getInitialValue()">
+
+    <div class="inputs">
+        <form action="#">
+            <div class="labelContainer">
+                <label for="name">Customer's name:</label>
+                <input id="name" type="text" placeholder="Enter Customer's Name" required />
+            </div>
+            <div class="labelContainer">
+                <label for="product">Product Name:</label>
+                <input id="product" type="text" placeholder="Enter Product Name" required />
+            </div>
+            <div class="labelContainer">
+                <label for="mobNumber">Customer's Mobile NO:</label>
+                <input id="mobNumber" type="text" placeholder="Enter Customer's Mobile No." required />
+            </div>
+
+            <div class="labelContainer">
+                <label for="imei">IMEI:</label>
+                <input id="imei" type="text" placeholder="Enter IMEI code" required />
+            </div>
+            <div class="labelContainer">
+                <label for="battery">Battery:</label>
+                <input id="battery" type="text" placeholder="Enter Battery code" required />
+            </div>
+            <div class="labelContainer">
+                <label for="charger">Charger:</label>
+                <input id="charger" type="text" placeholder="Enter Charger code" required />
+            </div>
+            <div class="labelContainer">
+                <label for="priceamount">Product Price(in ₹):</label>
+                <input id="priceamount" type="number" placeholder="Enter amount in numbers" required />
+            </div>
+            <div class="labelContainer">
+                <label for="inWords">Rupees(in words):</label>
+                <input id="inWords" type="text" placeholder="Enter amount in words" required />
+            </div>
+
+        </form>
+        <button onclick="proceed()" class="proceed">
+            PROCEED
+        </button>
+
+    </div>
+    <div class="billContainer">
+
+        <div id="printingBill" class="subcontainer">
+            <span style="margin-left: 45%;" class="location">Invoice Bill</span>
+            <span style="float: right;margin-right: 3%;" class="location">+919035034634</span>
+            <h3 id="company">SRI LAXMI COMMUNICATION</h3>
+            <span class="location">Near Junior College, Ambagilu-Uppunda-576232</span>
+            <div class="details">
+                <div id="invoiceHolder">
+                    <span id="invoiceLabel">INVOICE NO:</span>
+                    <span id="invoice"></span>
+                </div>
+                <div style="margin-top: 9%;"></div>
+                <div class="entries">
+                    <div style=" width: 35%; height: 25px;margin-left: 2%; float: left;">
+                        <span class="namelabel">Customer's Name :</span>
+                    </div>
+                    <div style=" width: 60%; height: 25px;margin-left: 3%; float: left;">
+                        <span class="enteredValues" id="cusname"></span>
+                    </div>
+                </div>
+
+                <div class="entries">
+                    <div style=" width: 35%; height: 25px;margin-left: 2%; float: left;">
+                        <span class="namelabel">Customer's Mobile No. :</span>
+                    </div>
+                    <div style=" width: 60%; height: 25px;margin-left: 3%; float: left;">
+                        <span class="enteredValues" id="contact"></span>
+                    </div>
+                </div>
+                <div class="entries">
+                    <div style=" width: 35%; height: 25px;margin-left: 2%; float: left;">
+                        <span class="namelabel">Date :</span>
+                    </div>
+                    <div style=" width: 60%; height: 25px;margin-left: 3%; float: left;">
+                        <span class="enteredValues" id="buydate"></span>
+                    </div>
+                </div>
+                <div class="entries">
+                    <div style=" width: 35%; height: 25px;margin-left: 2%; float: left;">
+                        <span class="namelabel">IMEI :</span>
+                    </div>
+                    <div style=" width: 60%; height: 25px;margin-left: 3%; float: left;">
+                        <span class="enteredValues" id="imeiDisplay"></span>
+                    </div>
+                </div>
+                <div class="entries">
+                    <div style=" width: 35%; height: 25px;margin-left: 2%; float: left;">
+                        <span class="namelabel">Battery :</span>
+                    </div>
+                    <div style=" width: 60%; height: 25px;margin-left: 3%; float: left;">
+                        <span class="enteredValues" id="battery1"></span>
+                    </div>
+                </div>
+                <div class="entries">
+                    <div style=" width: 35%; height: 25px;margin-left: 2%; float: left;">
+                        <span class="namelabel">Charger :</span>
+                    </div>
+                    <div style=" width: 60%; height: 25px;margin-left: 3%; float: left;">
+                        <span class="enteredValues" id="charger1"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="bill">
+                <div class="productdiv">
+                    <div id="producttitle">
+                        Product Name
+                    </div>
+                    <div style="text-align: center; color: #33287c;">
+                        <h2 id="item"></h2>
+                        <h2 id="cgst">CGST(%)</h2>
+                        <h2 id="sgst">SGST(%)</h2>
+                    </div>
+                </div>
+
+                <div class="amountdiv">
+                    <div id="amounttitle">Amount(₹)</div>
+                    <div style="text-align: center; color: #33287c;">
+                        <h2 id="price"></h2>
+                        <h2 id="cgstcalc"></h2>
+                        <h2 id="sgstcalc"></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="totaldiv" style="border-top: none;">
+                <span class="footer">Total Amount</span>
+                <span id="gT" class="totalPrice"></span>
+            </div>
+            <div style="height: 48px" class="entries">
+                <div style=" width: 28%; height: 25px;margin-left: 2%; float: left;">
+                    <span class="namelabel">Rupees(in words) :</span>
+                </div>
+                <div style=" width: 70%; height: 25px;margin-left: 3%; float: left;">
+                    <span class="enteredValues" id="inwords1"></span>
+                </div>
+                <h5 id="footernote1">Subject to Kundapura Jurisdiction</h5>
+                <span id="footernote2"><i><strong>Goods once sold will not be taken back or exchange</strong></i></span>
+            </div>
+        </div>
+
+    </div>
+    <button class="print" onclick="printing();window.print()">GENERATE BILL</button>
+</body>
+
+</html>
