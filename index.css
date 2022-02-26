@@ -257,12 +257,7 @@ body{
     margin-top: 12%; 
     color:#33287c;
 }
-.subcontainer{
-    height: 750px;
-}
-.billContainer{
-    height: 770px;
-}
+
 .entries{
     width: 97%;
 }
@@ -289,7 +284,7 @@ body{
     font-size: 20px;
 }
 .namelabel{
-    font-size: 12px;
+    font-size: 10px;
     color: #33287c;
     font-weight: 500;
 }
@@ -308,18 +303,13 @@ body{
     width: 65%;
 }
 #amounttitle{
-    font-size: 14px;
+    font-size: 12px;
 }
 #footernote1{
     margin-top: 12%; 
     color:#33287c;
 }
-.subcontainer{
-    height: 750px;
-}
-.billContainer{
-    height: 770px;
-}
+
 .entries{
     width: 97%;
 }
@@ -348,7 +338,7 @@ body{
     font-size: 20px;
 }
 .namelabel{
-    font-size: 12px;
+    font-size: 10px;
     color: #33287c;
     font-weight: 500;
 }
@@ -367,18 +357,13 @@ body{
     width: 65%;
 }
 #amounttitle{
-    font-size: 14px;
+    font-size: 12px;
 }
 #footernote1{
     margin-top: 12%; 
     color:#33287c;
 }
-.subcontainer{
-    height: 750px;
-}
-.billContainer{
-    height: 770px;
-}
+
 .entries{
     width: 97%;
 }
