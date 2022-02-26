@@ -83,7 +83,7 @@ body{
 }
 .details{
     width: 98%;
-    margin: 1%;
+    margin: 0%;
     border: 2px solid #33287c;
     height: 350px; 
 }
@@ -113,7 +113,7 @@ body{
     margin-top: 0.5%;
 }
 .namelabel{
-    font-size: 20px;
+    font-size: 15px;
     color: #33287c;
     font-weight: 500;
 }
