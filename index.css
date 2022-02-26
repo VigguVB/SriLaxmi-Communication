@@ -21,7 +21,6 @@ body{
 .billContainer{
     width: 80%;
     margin-left: 10%;
-    height: 960px;
     margin-top: 2%;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.76); 
 }
@@ -233,7 +232,7 @@ body{
     font-size: 20px;
 }
 .namelabel{
-    font-size: 12px;
+    font-size: 10px;
     color: #33287c;
     font-weight: 500;
 }
@@ -252,7 +251,7 @@ body{
     width: 65%;
 }
 #amounttitle{
-    font-size: 14px;
+    font-size: 11px;
 }
 #footernote1{
     margin-top: 12%; 
